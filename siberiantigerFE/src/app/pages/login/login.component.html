@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<p>login {{title}} works!</p>
+
+<input class="form-control" placeholder="id bulus" type="text" [(ngModel)]="userid">
+<input class="form-control" placeholder="password" type="text"   [(ngModel)]="passwrd">
+
+<button type="button" class="btn btn-outline-primary" (click)="login()">Bulus Login</button>
+
+
+<p class="w3-large w3-center" *ngIf="loginfailed === true" style="color: red;">Wrong Username or Password!</p>
+</div>
